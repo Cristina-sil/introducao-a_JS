@@ -1,18 +1,15 @@
-### Funções
+### Tratamento de Erros
 
-## Atividade 1: Alunos Aprovados
 
--  Crie uma função que recebe o array alunos e um número que irá representar a média final;
--  Percorra o array e popule um novo array auxiliar apenas com os alunos cujas notas são maiores ou iguais à média final;
--  Utilize a técnica "object destructuring" para manipular as propriedades desejadas de cada aluno.
-## Atividade 2: This
+Atividade: validação de erros por tipo
+O objetivo é que a função receba um array e retorne ele caso o seu tamanho corresponda ao número enviado como parâmetro na função. Caso contrário, um erro será lançado.
 
-Dada a função calculaIdade, utilize os métodos call e apply para modificar o valor de this. Crie seus próprios objetos para esta atividade!
-
-function calculaIdade(anos) {
-	return `Daqui a ${anos} anos, ${this.nome} terá ${
-		this.idade + anos
-	} anos de idade.`;
-}
-
+- Crie uma função que recebe um array e um número
+- Realize as seguintes validações
+- Se os parâmetros não forem enviados, lance um erro do tipo ReferenceError
+- Se o array não for do tipo 'object', lance um erro do tipo TypeError
+- Se o número não for do tipo 'number', lance um erro do tipo TypeError
+- Se o tamanho do array for diferente do número enviado como parâmetro, lance um erro do tipo RangeError
+- Utilize a declaração try...catch
+- Filtre as chamadas de catch por cada tipo de erro utilizando o operador instanceof
 

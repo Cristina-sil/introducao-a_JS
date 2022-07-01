@@ -56,6 +56,3 @@ function calculaIdade(anos) {
 
 console.log(calculaIdade.call(pessoa1,15));
 console.log(calculaIdade.apply(pessoa2,[7]));
-
-
-
